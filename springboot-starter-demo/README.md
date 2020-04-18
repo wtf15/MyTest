@@ -1,3 +1,15 @@
-1.将format-spring-boot-starter项目install后将maven依赖放到pom文件中
-2.启动项目
-3.访问，可以看到访问结果
+1.将format-spring-boot-starter项目install后将maven依赖放到pom文件中  
+2.启动项目  
+3.访问，可以看到访问结果  
+![image](https://github.com/wtf15/MyTest/blob/master/images/49AE55B4-0BDB-4853-AEC3-5EC92A5F3C0E.png)  
+4.在pom添加fastjson的依赖  
+```
+<dependency>  
+  <groupId>com.alibaba</groupId>  
+  <artifactId>fastjson</artifactId>  
+  <version>1.2.56</version>  
+  <optional>true</optional>  
+</dependency>
+```
+5.访问，可以看到访问结果 
+![image](https://github.com/wtf15/MyTest/blob/master/images/5FDD2AC5-F802-4FCD-972A-EBE1A316B931.png)
