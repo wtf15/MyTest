@@ -59,3 +59,7 @@ management.endpoint.health.show-details=always
 ![image](https://raw.githubusercontent.com/wtf15/MyTest/master/images/EDE275A0-E4D3-4C49-94AB-4D5EDBDEB567.png)  
 
         
+# JMX(Java 管理扩展)
+1. 启动JMXMain  
+2. 打开jconsole  
+![image](https://raw.githubusercontent.com/wtf15/MyTest/master/images/88CB430C-B9DB-4177-AF1D-D76079A78F59.png)  
