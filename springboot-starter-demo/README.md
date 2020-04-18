@@ -11,5 +11,12 @@
   <optional>true</optional>  
 </dependency>
 ```
-5.访问，可以看到访问结果 
-![image](https://github.com/wtf15/MyTest/blob/master/images/5FDD2AC5-F802-4FCD-972A-EBE1A316B931.png)
+5.访问，可以看到访问结果  
+![image](https://github.com/wtf15/MyTest/blob/master/images/5FDD2AC5-F802-4FCD-972A-EBE1A316B931.png)  
+6.能够加在配置文件  
+a).format-spring-boot-starter项目中增加类HelloProperties  
+b).HelloAutoConfiguration类中增加注解@EnableConfigurationProperties(HelloProperties.class)  
+c).springboot-starter-demo项目中在application.properties增加wtf.hello.format前缀的配置  
+d).启动访问  
+![image](https://github.com/wtf15/MyTest/blob/master/images/0F20AB7D-BD21-479D-AAF0-E14BE9190018.png)  
+
