@@ -1,3 +1,4 @@
+# starter
 1.将format-spring-boot-starter项目install后将maven依赖放到pom文件中  
 2.启动项目  
 3.访问，可以看到访问结果  
@@ -19,4 +20,23 @@ b).HelloAutoConfiguration类中增加注解@EnableConfigurationProperties(HelloP
 c).springboot-starter-demo项目中在application.properties增加wtf.hello.format前缀的配置  
 d).启动访问  
 ![image](https://github.com/wtf15/MyTest/blob/master/images/0F20AB7D-BD21-479D-AAF0-E14BE9190018.png)  
+  
+  
+# jdbc多数据源  
+1.配置pom文件  
+```
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-jdbc</artifactId>
+</dependency>
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>8.0.16</version>
+</dependency>
+```
+2.配置多数据源JdbcDataSourceConfig  
+3.配置文件application.properties  
+4.测试文件JdbcTests  
 
+        
