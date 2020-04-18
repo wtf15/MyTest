@@ -13,6 +13,7 @@ import org.springframework.context.annotation.Primary;
 @Configuration
 public class FormatAutoConfiguration {
 
+    // 如果在当前环境中不存在这个类
     @ConditionalOnMissingClass("com.alibaba.fastjson.JSON")
     @Bean
     @Primary
@@ -20,6 +21,7 @@ public class FormatAutoConfiguration {
         return new StringFormatProcessor();
     }
 
+    // 如果在当前环境中存在这个类
     @ConditionalOnClass(name = "com.alibaba.fastjson.JSON")
     @Bean
     public FormatProcessor jsonFormat(){
