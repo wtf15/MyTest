@@ -38,5 +38,24 @@ d).启动访问
 2.配置多数据源JdbcDataSourceConfig  
 3.配置文件application.properties  
 4.测试文件JdbcTests  
+  
+  
+# actuator
+1. 增加依赖  
+```
+<dependency> 
+	<groupId>org.springframework.boot</groupId> 
+	<artifactId>spring-boot-starter-actuator</artifactId>
+</dependency>
+```
+2. 启动项目，访问http://localhost:8080/actuator  
+![image](https://raw.githubusercontent.com/wtf15/MyTest/master/images/87840150-4DBD-480D-B2DC-4322706F8BB5.png)  
+3. 增加下面配置后的展示  
+```
+management.endpoints.web.exposure.include=*
+management.endpoint.health.show-details=always
+```
+![image](https://raw.githubusercontent.com/wtf15/MyTest/master/images/3AF89455-7A58-4514-95A7-A9723F3377C1.png)  
+![image](https://raw.githubusercontent.com/wtf15/MyTest/master/images/EDE275A0-E4D3-4C49-94AB-4D5EDBDEB567.png)  
 
         
