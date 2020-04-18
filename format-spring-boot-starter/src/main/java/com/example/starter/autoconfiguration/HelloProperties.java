@@ -8,7 +8,7 @@ import java.util.Map;
 @ConfigurationProperties(prefix=HelloProperties.HELLO_FORMAT_PREFIX)
 public class HelloProperties {
 
-    public static final String HELLO_FORMAT_PREFIX="gupao.hello.format";
+    public static final String HELLO_FORMAT_PREFIX="wtf.hello.format";
     private Map<String,Object> info;
 
     public Map<String, Object> getInfo() {
