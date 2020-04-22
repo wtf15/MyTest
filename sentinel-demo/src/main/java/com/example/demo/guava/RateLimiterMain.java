@@ -1,4 +1,4 @@
-package com.example.demo.sentinel;
+package com.example.demo.guava;
 
 import java.io.IOException;
 import java.util.Random;

@@ -51,6 +51,8 @@
             <artifactId>sentinel-transport-simple-http</artifactId>
             <version>1.6.3</version>
         </dependency>
+
+        <!--aop,sentinel注解的方式实现-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-aop</artifactId>

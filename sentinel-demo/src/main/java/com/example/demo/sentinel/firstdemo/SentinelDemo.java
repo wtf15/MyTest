@@ -1,4 +1,4 @@
-package com.example.demo.sentinel;
+package com.example.demo.sentinel.firstdemo;
 
 import java.util.ArrayList;
 import java.util.List;
