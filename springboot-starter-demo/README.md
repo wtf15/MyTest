@@ -2,7 +2,7 @@
 1.将format-spring-boot-starter项目install后将maven依赖放到pom文件中  
 2.启动项目  
 3.访问，可以看到访问结果  
-![image](https://github.com/wtf15/MyTest/blob/master/images/49AE55B4-0BDB-4853-AEC3-5EC92A5F3C0E.png)  
+![image](https://user-images.githubusercontent.com/30641856/79949599-5eea3180-84a8-11ea-937b-d8c11aac2210.png)  
 4.在pom添加fastjson的依赖  
 ```
 <dependency>  
@@ -13,13 +13,13 @@
 </dependency>
 ```
 5.访问，可以看到访问结果  
-![image](https://github.com/wtf15/MyTest/blob/master/images/5FDD2AC5-F802-4FCD-972A-EBE1A316B931.png)  
+![image](https://user-images.githubusercontent.com/30641856/79949486-37936480-84a8-11ea-9ec8-c1b763cdc979.png)  
 6.能够加在配置文件  
 a).format-spring-boot-starter项目中增加类HelloProperties  
 b).HelloAutoConfiguration类中增加注解@EnableConfigurationProperties(HelloProperties.class)  
 c).springboot-starter-demo项目中在application.properties增加wtf.hello.format前缀的配置  
 d).启动访问  
-![image](https://github.com/wtf15/MyTest/blob/master/images/0F20AB7D-BD21-479D-AAF0-E14BE9190018.png)  
+![image](https://user-images.githubusercontent.com/30641856/79949162-af14c400-84a7-11ea-99a9-223d568fa28f.png)  
   
   
 # jdbc多数据源  
@@ -49,17 +49,17 @@ d).启动访问
 </dependency>
 ```
 2. 启动项目，访问http://localhost:8080/actuator  
-![image](https://raw.githubusercontent.com/wtf15/MyTest/master/images/87840150-4DBD-480D-B2DC-4322706F8BB5.png)  
+![image](https://user-images.githubusercontent.com/30641856/79949748-9c4ebf00-84a8-11ea-9dad-c610ab0ad5b0.png)  
 3. 增加下面配置后的展示  
 ```
 management.endpoints.web.exposure.include=*
 management.endpoint.health.show-details=always
 ```
-![image](https://raw.githubusercontent.com/wtf15/MyTest/master/images/3AF89455-7A58-4514-95A7-A9723F3377C1.png)  
-![image](https://raw.githubusercontent.com/wtf15/MyTest/master/images/EDE275A0-E4D3-4C49-94AB-4D5EDBDEB567.png)  
+![image](https://user-images.githubusercontent.com/30641856/79949407-1af72c80-84a8-11ea-9183-ecbdebe5f70b.png)  
+![image](https://user-images.githubusercontent.com/30641856/79949809-b38dac80-84a8-11ea-8de5-9086bcdf6ff9.png)  
 
         
 # JMX(Java 管理扩展)
 1. 启动JMXMain  
 2. 打开jconsole  
-![image](https://raw.githubusercontent.com/wtf15/MyTest/master/images/88CB430C-B9DB-4177-AF1D-D76079A78F59.png)  
+![image](https://user-images.githubusercontent.com/30641856/79949693-8214e100-84a8-11ea-9374-66274c47c95f.png)  
