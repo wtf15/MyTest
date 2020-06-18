@@ -3,10 +3,10 @@ package com.wtf.demo;
 import java.io.IOException;
 import java.util.Collections;
 
+import com.alibaba.csp.sentinel.cluster.ClusterStateManager;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.alibaba.csp.sentinel.cluster.ClusterStateManager;
 import com.alibaba.csp.sentinel.slots.block.RuleConstant;
 import com.alibaba.csp.sentinel.slots.block.flow.FlowRule;
 import com.alibaba.csp.sentinel.slots.block.flow.FlowRuleManager;
@@ -17,11 +17,11 @@ public class SentinelProviderApplication {
     public static void main(String[] args) throws IOException {
         // 初始化限流规则
         // 本地规则
-         initFlowRule();
+        // initFlowRule();
 
-        //表示当前的节点是集群客户端
+        // 表示当前的节点是集群客户端
         // nacos上配置的规则
-        //ClusterStateManager.applyState(ClusterStateManager.CLUSTER_CLIENT);
+        ClusterStateManager.applyState(ClusterStateManager.CLUSTER_CLIENT);
         SpringApplication.run(SentinelProviderApplication.class, args);
         System.in.read();
     }
